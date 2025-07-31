@@ -6,3 +6,9 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.prose p {
+    font-size: "20px";
+    
+}

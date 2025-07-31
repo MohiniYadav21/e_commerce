@@ -18,7 +18,7 @@ const ProductDetail = () => {
     fetchProducts();
   }, [id]);
 
-  // return <div>{product.title}</div>;
+  
   return(
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white rounded-2xl shadow-lg p-6 w-full max-w-md">
@@ -30,6 +30,7 @@ const ProductDetail = () => {
           />
         )}
         <h2 className="text-2xl font-bold mb-2">{product.title}</h2>
+        <p className="">{product.description}</p>
         <p className="text-lg font-semibold text-green-600 mb-2">
           ₹ {product.price}
         </p>
