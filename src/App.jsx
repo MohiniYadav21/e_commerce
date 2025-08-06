@@ -6,6 +6,7 @@ import  Search from './pages/Search'
 import Category from './pages/Category'
 import Blog from './pages/Blog'
 import BlogDetail from './pages/blogDetail'
+import Signup from './pages/Signup'
 
 
 
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/categories/:slug' element={<Category/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/blog/:slug' element={<BlogDetail />}/>
+        <Route path='/signup' element={<Signup />}/>
+        
         
       </Routes>
   )

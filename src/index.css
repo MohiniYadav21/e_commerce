@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 
-.prose h1 {
+ .prose h1 {
   @apply text-4xl font-extrabold text-gray-900 mb-6 mt-8;
 }
 
@@ -42,7 +42,11 @@
   @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm leading-relaxed mb-6;
 }
 
-/* Optional: blockquote style */
+
 .prose blockquote {
   @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 mb-4;
+} 
+.categories{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

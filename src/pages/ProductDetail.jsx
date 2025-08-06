@@ -18,6 +18,21 @@ const ProductDetail = () => {
     fetchProducts();
   }, [id]);
 
+  useEffect(() => {
+  const fetchProduct = async () => {
+    try {
+      const response = await axios.get('/api/products/123');
+      setProduct(response.data);
+    } catch (error) {
+      console.error('Axios fetch error:', error);
+      // Optional: show a fallback UI or error message
+    }
+  };
+
+  fetchProduct();
+}, []);
+
+
   
   return(
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">

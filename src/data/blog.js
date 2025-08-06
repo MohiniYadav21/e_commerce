@@ -159,7 +159,7 @@ document.querySelector('#top-btn').addEventListener('click', () =&gt; {
   {
   slug: "understanding-javascript-fundamentals",
   title: "Understanding JavaScript Fundamentals: A Deep Dive",
-  image: "https://via.placeholder.com/800x400?text=JavaScript+Fundamentals",
+  image: "https://files.ably.io/ghost/prod/2023/12/choosing-the-best-javascript-frameworks-for-your-next-project.png",
   content: `
     <p>JavaScript is the backbone of modern web development. Whether you're building interactive websites, single-page apps, or server-side applications using Node.js, mastering JavaScript fundamentals is essential.</p>
 
@@ -212,7 +212,7 @@ const person = { name: 'Alice', age: 25 };</code></pre>
 {
   slug: "essential-ui-ux-design-principles",
   title: "Essential UI/UX Design Principles Every Developer Should Know",
-  image: "https://via.placeholder.com/800x400?text=UI+UX+Design",
+  image: "https://lh4.googleusercontent.com/proxy/NPxB-kmTMsSavPXMfUQp1oCnsyiWuYdbbSf25UTh3zZVL1FU_kYRsIWQ0tkQol7Kz02J_eRuN3pNgfOtiK3bqXz0iMSjAlttKx1KGKDG",
   content: `
     <p>UI/UX design isn’t just for designers — developers benefit immensely from understanding the basics. Whether you’re building websites or apps, applying design principles makes your product more usable, accessible, and delightful.</p>
 

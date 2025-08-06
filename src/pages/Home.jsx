@@ -1,11 +1,12 @@
 import React from 'react'
 import Products from '../Components/Products'
-import HomeCategory from '../Components/HomeCategory'
+import Banner from '../Components/banner'
+
 
 const Home = () => {
   return (
     <div>
-      <HomeCategory/>
+      <Banner />
       <Products />
     </div>
   )

@@ -16,7 +16,7 @@ const HomeCategory = () => {
     fetchCategories();
   }, []);
   return (
-    <div className="flex items-center gap-3 my-4 overflow-x-scroll">
+    <div   className="flex items-center gap-3 my-4 overflow-x-scroll categories">
       {categories.map((category) => (
         <Link
           to={`/categories/${category.slug}`}
