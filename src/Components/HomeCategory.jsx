@@ -17,10 +17,10 @@ const HomeCategory = () => {
   }, []);
   return (
     <div   className="flex items-center gap-3 my-4 overflow-x-scroll categories">
-      {categories.map((category) => (
+      {categories.map((category,index) => (
         <Link
           to={`/categories/${category.slug}`}
-          key={category.id}
+          key={index}
           className="border border-black px-4 py-2 rounded-xl"
         >
           <h1 className="text-nowrap">{category.name}</h1>

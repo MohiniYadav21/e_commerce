@@ -105,7 +105,9 @@ const Nav = () => {
           </button>
             </li></Link>
           <li>
+           <Link to='/cart'>
             <ShoppingCart size={30} className="hover:text-blue-600" />
+           </Link>
           </li>
         </ul>
 

@@ -19,7 +19,13 @@ const Products = () => {
     {products.map((product) => (
         <Card key={product.id} product={product} />
     ))}
-  </div>;
+
+
+
+
+  </div>
+  
+ 
 };
 
 export default Products;
