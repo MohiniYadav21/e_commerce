@@ -29,14 +29,17 @@ const { addToCart } = useContext(CartContext);
         </div>
         <div className="flex justify-between items-center mt-4">
             <button
-             onClick={() => addToCart(product)}
+             onClick={(e) =>{e.preventDefault();
+               addToCart(product)}}
             className='border-2 border-black px-8 py-2 rounded-full text-black hover:scale-110 duration-300 '>Add to Cart</button>
             <button className='border-2 border-black bg-black px-8 py-2 rounded-full text-white hover:scale-110 duration-300'>Buy Now</button>
         </div>
         </div>
         
     </div>
+    
    </Link>
+  
   )
 }
 
