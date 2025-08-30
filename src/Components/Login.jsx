@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <div className="flex  items-center justify-center w-full py-20 bg-gray-100">
-      <div className="flex flex-col md:flex-row gap-5 w-full -max-w-5xl justify-center items-start shadow-lg bg-white">
+      <div className="flex flex-col md:flex-row gap-5 w-full max-w-5xl justify-center items-start shadow-lg bg-white">
         <div className="bg-blue-500 py-8 px-20 h-150 w-120">
           <h1 className="text-2xl md:text-4xl font-bold text-white">
             Looks like you're new here!

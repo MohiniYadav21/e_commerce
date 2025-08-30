@@ -1,10 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { useParams } from "react-router";
+
 
 const ProductDetail = () => {
   const params = useParams();
   const id = params.id;
+  
 
   const [product, setProduct] = useState({});
 
@@ -25,7 +27,7 @@ const ProductDetail = () => {
       setProduct(response.data);
     } catch (error) {
       console.error('Axios fetch error:', error);
-      // Optional: show a fallback UI or error message
+      
     }
   };
 
@@ -52,9 +54,18 @@ const ProductDetail = () => {
         <p className="text-sm text-gray-500 mb-1">Brand: {product.brand}</p>
         <p className="text-sm text-gray-500 mb-1">Category: {product.category}</p>
         
-        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      
+       <div className="flex items-center justify-between">
+         <button 
+        
+         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-white">
           Add to Cart
         </button>
+        <button className="bg-whute text-blue-600 border border-blue-600 px-4 py-2 gap-3 rounded hover:bg-blue-700 hover:text-white">
+          Buy Now
+        </button>
+       </div>
+     
       </div>
     </div>
   

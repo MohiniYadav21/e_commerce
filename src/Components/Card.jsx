@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import {CartContext}  from '../context/CartContext'
-import './Card.css'
+
 import { Link } from 'react-router'
 
 const Card = ({product}) => {
@@ -10,7 +10,7 @@ const { addToCart } = useContext(CartContext);
 
   return (
     <Link to={`/${product.id}`}>
-    <div className='rounded-xl border border-black border-2 bg-gray-100'>
+    <div className='rounded-xl border border-black border-2 transition-all hover:scale-105 bg-white'>
       
         <div className="h-[200px] flex items-center justify-center ">
             <img src={product.thumbnail} alt={product.title} className='rounded-xl overflow-hidden h-[200px] object-cover' />

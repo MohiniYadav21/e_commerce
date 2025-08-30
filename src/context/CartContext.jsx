@@ -1,61 +1,48 @@
-// import React, { createContext, useState } from "react";
-
-//  export const CartContext = createContext();
-
-//  export const CartProvider = ({ children }) => {
-
-//   const [cart, setCart] = useState([]);
-
-//   const addToCart = (product) => {
-//     setCart((prev) => [...prev, product]);
-//   };
-
-//    const removeFromCart = (id) => {
-//     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
-//   };
-
-//   return (
-//     <CartContext.Provider value={{ cart, addToCart,removeFromCart }}>
-//       {children}
-//     </CartContext.Provider>
-//   );
-// };
-
-
-import React, { createContext, useState, useEffect } from "react";
+// src/context/CartContext.jsx
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
-
-  // ✅ Load cart from localStorage on first render
-  useEffect(() => {
-    const storedCart = localStorage.getItem("cart");
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
+  // Initialize cart directly from localStorage (prevents flicker on refresh)
+  const [cart, setCart] = useState(() => {
+    try {
+      const storedCart = localStorage.getItem("cart");
+      return storedCart ? JSON.parse(storedCart) : [];
+    } catch (error) {
+      console.error("Error parsing cart from localStorage", error);
+      return [];
     }
-  }, []);
+  });
 
-  // ✅ Save cart to localStorage whenever it changes
+  // Keep localStorage in sync whenever cart changes
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // Add item to cart
+  // Add product to cart
   const addToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+    setCart((prev) => {
+      const exists = prev.find((item) => item.id === product.id);
+      if (exists) return prev; // Prevent duplicates
+      return [...prev, product];
+    });
   };
 
-  // Remove item from cart
+  // Remove product from cart
   const removeFromCart = (id) => {
-    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+    setCart((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  // Clear cart completely
+  const clearCart = () => {
+    setCart([]);
+    localStorage.removeItem("cart");
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
 };
-
