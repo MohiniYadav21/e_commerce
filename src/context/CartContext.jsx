@@ -1,5 +1,6 @@
 // src/context/CartContext.jsx
 import { createContext, useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 export const CartContext = createContext();
 
@@ -27,6 +28,7 @@ export const CartProvider = ({ children }) => {
       if (exists) return prev; // Prevent duplicates
       return [...prev, product];
     });
+    toast.success("Item added")
   };
 
   // Remove product from cart

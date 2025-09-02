@@ -15,7 +15,7 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  return <div className="grid  min-h-[80vh] grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-5 my-10 px-10">
+  return <div className="grid min-h-[80vh] grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 my-10 px-2 md:px-10">
     {products.map((product) => (
         <Card key={product.id} product={product} />
     ))}

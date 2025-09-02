@@ -7,6 +7,7 @@ import {BrowserRouter} from "react-router"
 import Footer from './Components/Footer.jsx'
 import HomeCategory from './Components/HomeCategory.jsx'
 import  {CartProvider} from './context/CartContext.jsx'
+import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
  
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <App />
     <Footer/> 
     </CartProvider>
+    <ToastContainer />
     </BrowserRouter>
   </StrictMode>,
 )
