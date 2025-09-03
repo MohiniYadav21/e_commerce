@@ -129,15 +129,13 @@ const HomeCategory = () => {
               ${isActive ? "bg-black text-white" : "bg-white text-black"} 
               hover:bg-black hover:text-white hover:scale-105`}
           >
-            <div className="flex flex-col w-28 h-28 items-center justify-center">
+            <div className="flex flex-col w-12 md:w-28 h-12 md:h-28 items-center justify-center">
               <img
                 src={categoryImage}
-                width={80}
-                height={80}
                 alt={category.name}
-                className="rounded-md object-cover"
+                className="w-10 md:w-20 h-10 md:h-20 rounded-md object-cover"
               />
-              <h1 className="text-nowrap capitalize">{category.name}</h1>
+              <h1 className="text-xs md:text-base capitalize text-center ">{category.name}</h1>
             </div>
           </Link>
         );
