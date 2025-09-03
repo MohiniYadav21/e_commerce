@@ -42,17 +42,17 @@ const Banner = () => {
     }
 
   return (
-     <div className='w-full max-w-8xl m-auto h-[200px]  sm:h-[300px] md:h-[400px] lg:h-[500px]  py-6 px-4 relative  group overflow-hidden'>
+     <div className='w-full max-w-8xl m-auto h-[200px]  sm:h-[300px] md:h-[400px] lg:h-[500px]  py-6 px-4 relative  group overflow-hidden bg-gray-100'>
         <div style={{backgroundImage:`url(${slides[currentTndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat object-cover duration-500'></div>
         {/* Left Arrow */}
-        <div className=' hidden group-hover:block absolute top-[50%] -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
+        <div className=' hidden group-hover:block absolute top-[50%] -translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white/50 text-white cursor-pointer '>
             <ArrowLeft 
             onClick={prevSlide}
             size={30}/>
         </div>
 
           {/* Right Arrow*/}
-        <div className=' hidden group-hover:block absolute top-[50%] -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
+        <div className=' hidden group-hover:block absolute top-[50%] -translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white/50 text-white cursor-pointer '>
             <ArrowRight
             onClick={nextSlide}
             size={30} />
@@ -62,7 +62,7 @@ const Banner = () => {
                 <button key={slideIndex}
                 onClick={() =>goToSlide(slideIndex) } 
                 className='text-2xl cursor-pointer'>
-                    <DotIcon size={30}/>
+                    <DotIcon size={20}/>
                 </button>
             ))}
         </div>

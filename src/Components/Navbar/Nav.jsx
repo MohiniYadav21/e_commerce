@@ -162,7 +162,7 @@ const Nav = () => {
 
   return (
     <div className="bg-white shadow-md px-6 py-4 relative" ref={wrapperRef}>
-      {/* ✅ Flex container: logo + search + menu */}
+      {/*  Flex container: logo + search + menu */}
       <div className="flex items-center justify-between gap-6">
         
         {/* Logo */}
@@ -190,7 +190,7 @@ const Nav = () => {
             <Search size={20} />
           </button>
 
-          {/* ✅ Suggestions dropdown absolute */}
+          {/* Suggestions dropdown absolute */}
           {openSearchResult && (
             <div className="absolute top-full left-0 mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg z-50">
               {suggestions.slice(0, 6).map((s) => (

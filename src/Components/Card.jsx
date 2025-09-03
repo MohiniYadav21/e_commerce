@@ -8,7 +8,7 @@ const Card = ({ product }) => {
 
   return (
     <Link to={`/${product.id}`}>
-      <div className="rounded-xl border border-black border-2 transition-all hover:scale-105 bg-white ">
+      <div className="rounded-xl  transition-all hover:scale-105 bg-white shadow ">
         <div className="h-[100px] md:h-[200px] flex items-center justify-center ">
           <img
             src={product.thumbnail}
@@ -16,13 +16,13 @@ const Card = ({ product }) => {
             className="rounded-xl overflow-hidden h-[100px] md:h-[200px] object-cover"
           />
         </div>
-        <div className="p-2 md:p-4 border border-gray-300">
+        <div className="p-2 md:p-4 ">
           <h1 className="font-bold text-sm md:text-xl">{product.title}</h1>
 
-          <p className="hidden md:block text-sm text-gray-500 mb-1">
+          <p className=" text-sm text-gray-500 mb-1">
             Brand: {product.brand}
           </p>
-          <p className="hidden md:block text-sm text-gray-500 mb-1">
+          <p className="text-sm text-gray-500 mb-1">
             Category: {product.category}
           </p>
 
@@ -35,11 +35,11 @@ const Card = ({ product }) => {
                 e.preventDefault();
                 addToCart(product);
               }}
-              className="border-2 w-full sm:w-fit border-black px-2 sm:px-4 md:px-8 py-1 md:py-2 rounded-full text-black hover:scale-110 duration-300 "
+              className="hidden md:block border-2 w-full sm:w-fit border-black px-2 sm:px-4 md:px-8 py-1 md:py-2 rounded-full text-black hover:scale-110 duration-300 "
             >
               Add to Cart
             </button>
-            <button className="border-2 w-full sm:w-fit border-black bg-black px-2 sm:px-4 md:px-8 py-1 md:py-2 rounded-full text-white hover:scale-110 duration-300">
+            <button className="hidden md:block border-2 w-full sm:w-fit border-black bg-black px-2 sm:px-4 md:px-8 py-1 md:py-2 rounded-full text-white hover:scale-110 duration-300">
               Buy Now
             </button>
           </div>
