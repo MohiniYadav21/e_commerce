@@ -27,7 +27,7 @@ const Card = ({ product }) => {
           </p>
 
           <div className="text-lg font-semibold text-green-600 mb-2">
-            ₹ {product.price}
+            $ {product.price}
           </div>
           <div className="flex flex-col sm:flex-row gap-2  justify-between items-center mt-4">
             <button
@@ -42,10 +42,12 @@ const Card = ({ product }) => {
             <button className="hidden md:block border-2 w-full sm:w-fit border-black bg-black px-2 sm:px-4 md:px-8 py-1 md:py-2 rounded-full text-white hover:scale-110 duration-300">
               Buy Now
             </button>
+            
           </div>
         </div>
       </div>
     </Link>
+   
   );
 };
 
