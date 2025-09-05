@@ -216,6 +216,36 @@ const Home = () => {
 
 
       <Products />
+
+
+      <section className="bg-white p-4 mt-6 rounded-lg shadow flex flex-col md:flex-row items-center gap-6">
+  {/* Banner Image */}
+  <img
+    src="/grow.png"
+    alt="Fashion Banner"
+    className="rounded-md object-cover w-full md:w-1/2"
+  />
+
+  {/* Text Content */}
+  <div className="bg-white rounded-xl p-4 md:p-6 w-full md:w-1/2 text-center md:text-left leading-relaxed space-y-3">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+      Exclusive Grocery Sale on the App 
+    </h2>
+    <p className="text-xl text-base md:text-lg text-gray-600">
+      Get all your daily essentials at unbeatable prices with our exclusive Grocery Sale on the app! From fresh fruits and vegetables to pantry staples, snacks, beverages, and household items, 
+      everything you need is now just a tap away. Enjoy top-quality groceries, exciting discounts, and extra savings with app-only deals..
+    </p>
+    <p className="text-xl text-base md:text-lg text-gray-600">
+      Whether you’re stocking up for the week or planning a special family dinner, we’ve got you covered with reliable, fast delivery and trusted brands. Download the app now and experience the most
+       convenient and budget-friendly grocery shopping before the sale ends!
+    </p>
+    <button className="text-xl mt-4 px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg shadow hover:bg-pink-700 transition duration-300">
+      Shop the Sale
+    </button>
+  </div>
+</section>
+
+
     </div>
   )
 }
