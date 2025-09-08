@@ -245,6 +245,27 @@ const Home = () => {
   </div>
 </section>
 
+<section className='rounded-md'>
+   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  p-4   '>
+    <img className="w-[500px] h-[400px]"
+     src="/img1.webp" alt="tv" />
+     <img className="w-[500px] h-[400px]"
+     src="/img2.jpg" alt="shoes" />
+      <img  className="w-[500px] h-[400px]"
+       src="/img3.webp" alt="phone" />
+       <img  className="w-[500px] h-[400px]"
+        src="/img4.jpg" alt="shoes" />
+        <img className="w-[500px] h-[400px]"
+        src="/img5.jpg" alt="shoes" />
+         <img className="w-[500px] h-[400px]"
+          src="/img6.jpg" alt="shoes" />
+           <img className="w-[500px] h-[400px]"
+     src="/img1.webp" alt="tv" />
+     <img className="w-[500px] h-[400px]"
+     src="/img2.jpg" alt="shoes" />
+   </div>
+  </section>
+
 
     </div>
   )
