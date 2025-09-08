@@ -4,9 +4,74 @@ import Banner from "../Components/Banner"
 
 
 const Home = () => {
+   const electronics = [
+    {
+      id: 1,
+      name: "Fans & Geysers",
+      offer: "From $999",
+      image: "/gyser.png",
+    },
+    {
+      id: 2,
+      name: "Home Essentials",
+      offer: "From $299",
+      image: "/home.jpeg",
+    },
+    {
+      id: 3,
+      name: "Fridege",
+      offer: "From $9990",
+      image: "/fridge.jpeg",
+    },
+    {
+      id: 4,
+      name: "Best Selling Mobile Speakers",
+      offer: "From $499",
+      image: "/speaker.jpeg",
+    },
+    {
+      id: 5,
+      name: "Monitors",
+      offer: "From $6599",
+      image: "/tv.webp",
+    },
+    {
+      id: 6,
+      name: "Fastrack Smartwatches",
+      offer: "From $1399",
+      image: "/watch1.webp",
+    },
+  ];
+
   return (
     <div>
       <Banner />
+        <section className="bg-white rounded-lg shadow p-4 mt-6">
+      {/* Title */}
+      <h2 className="text-xl font-bold text-gray-800 mb-4">
+        Best of Electronics
+      </h2>
+
+      {/* Horizontal scroll for products */}
+      <div className="flex gap-4 overflow-x-auto md:grid md:grid-cols-6 scrollbar-hide">
+        {electronics.map((item) => (
+          <div
+            key={item.id}
+            className="min-w-[160px] bg-white border rounded-lg shadow hover:shadow-md transition p-3 text-center cursor-pointer flex-shrink-0"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-28 h-28 mx-auto object-contain"
+            />
+            <h3 className="text-gray-700 text-sm font-medium mt-2">
+              {item.name}
+            </h3>
+            <p className="text-blue-600 font-semibold">{item.offer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
      
 <section className="bg-white p-4 mt-6 rounded-lg shadow">
   <h2 className="text-xl font-bold mb-3">Fashion's Top Deals</h2>
@@ -246,7 +311,7 @@ const Home = () => {
 </section>
 
 <section className='rounded-md'>
-   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  p-4   '>
+   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  p-4  '>
     <img className="w-[500px] h-[400px]"
      src="/img1.webp" alt="tv" />
      <img className="w-[500px] h-[400px]"
