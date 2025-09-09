@@ -119,12 +119,15 @@
 
 // export default Nav;
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Search, ShoppingCart, Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { CartContext } from "../../context/CartContext";
 
 const Nav = () => {
+  const { cart } = useContext(CartContext);
+
   const [searchterm, setSearchterm] = useState("");
   const [openSearchResult, setOpenSearchResult] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
@@ -220,10 +223,11 @@ const Nav = () => {
               </button>
             </li>
           </Link>
-          <li>
+          <li className="relative">
             <Link to="/cart">
               <ShoppingCart size={28} className="hover:text-blue-600" />
             </Link>
+            <div className="absolute h-5 w-5 bg-red-600 text-white font-bold rounded-full flex items-center justify-center top-0 right-0">{cart.length}</div>
           </li>
         </ul>
 

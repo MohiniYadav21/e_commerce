@@ -1,59 +1,31 @@
+
+
+
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import Card from "../Components/Card";
 
 const Cart = () => {
-  const { cart, removeFromCart } = useContext(CartContext);
+  const { cart } = useContext(CartContext);
 
-  if (!cart || cart.length === 0) {
+  if (cart.length === 0) {
     return (
-      <h2 className="text-center mt-10 text-xl font-semibold">
-        🛒 Your cart is empty
+      <div className="min-h-[60vh]">
+      <h2 className="text-center mt-10 text-xl">
+        Your cart is empty
       </h2>
+      </div>
     );
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="max-w-6xl min-h-[60vh] mx-auto p-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {cart.map((item) => (
-        <div
-          key={item.id}
-          className="rounded-xl border border-black bg-gray-50 shadow-md hover:shadow-lg transition"
-        >
-          {/* Image */}
-          <div className=" flex items-center justify-center overflow-hidden object-cover rounded-xl mb-4">
-            <img
-              src={item.thumbnail}
-              alt={item.title}
-              className="h-full w-full object-cover hover:scale-105 transition"
-            />
-          </div>
-
-          {/* Details */}
-          <div className="p-4">
-            <h1 className="font-bold text-lg">{item.title}</h1>
-            <p className="text-sm text-gray-600">Brand: {item.brand}</p>
-            <p className="text-sm text-gray-600">Category: {item.category}</p>
-            <div className="text-lg font-semibold text-green-600 my-2">
-              ₹ {item.price}
-            </div>
-
-            {/* Buttons */}
-            <div className="flex justify-between items-center mt-4">
-              <button
-                onClick={() => removeFromCart(item.id)}
-                className="border-2 border-black px-6 py-2 rounded-full text-black hover:bg-black hover:text-white hover:scale-105 transition"
-              >
-                Remove
-              </button>
-              <button className="border-2 border-black bg-black px-6 py-2 rounded-full text-white hover:bg-transparent hover:text-black hover:scale-105 transition">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
+        <Card product={item} key={item.id} isCart={true} />
       ))}
     </div>
   );
 };
 
 export default Cart;
+
