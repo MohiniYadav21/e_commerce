@@ -66,6 +66,7 @@ const Footer = () => {
             <FileQuestionMark color="yellow" size={25} /> Help center
           </li>
           <li className="text-lg">©2007-2025 StuffSuss.com</li>
+          <li><img src="/payment-method-c454fb.svg" alt="payment method" /></li>
         </ul>
       </div>
     </>
