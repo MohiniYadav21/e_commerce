@@ -9,13 +9,13 @@ const Home = () => {
       id: 1,
       name: "Fans & Geysers",
       offer: "From ₹999",
-      image: "/gyser.png",
+      image: "/heater.png",
     },
     {
       id: 2,
       name: "Home Essentials",
       offer: "From ₹2999",
-      image: "/home.jpeg",
+      image: "/airfrier.webp",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const Home = () => {
       <section className="w-full">
         <div className="w-full">
           <img
-            src="/banner2.webp"
+            src="/bann.webp"
             alt="banner"
             className="w-full h-auto object-cover rounded-md p-4"
           />
@@ -87,9 +87,9 @@ const Home = () => {
 
       <section className="bg-gray-100 ">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6">
-          <img className="w-[600px] h-[300px]" src="/img6.jpg" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img1.webp" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/img2.jpg" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/bedsheet.png" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/earbuds.webp" alt="tv" />
+          <img className="w-[600px] h-[300px]" src="/horlics.jpg" alt="shoes" />
         </div>
       </section>
 
@@ -201,6 +201,88 @@ const Home = () => {
           <button className="text-xl mt-4 px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg shadow hover:bg-pink-700 transition duration-300">
             Shop the Sale
           </button>
+        </div>
+      </section>
+
+
+      <section className="bg-white p-4 mt-6 rounded-lg shadow">
+        <h2 className="text-xl font-bold mb-3">Women's Essential</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {/* Product 1 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/womenshoes.jpg"
+              alt="Shoes"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Women Shoes</p>
+            <p className="text-green-600 font-semibold">Min. 40% Off</p>
+          </div>
+
+          {/* Product 2 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/sunglass.webp"
+              alt="Women's Saree"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Women’s Glasses</p>
+            <p className="text-green-600 font-semibold">Min. 50% Off</p>
+          </div>
+
+          {/* Product 3 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/bag.jpeg"
+              alt="Laptop Bag"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Laptop Bags</p>
+            <p className="text-green-600 font-semibold">Min. 70% Off</p>
+          </div>
+
+          {/* Product 4 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/shoes.webp"
+              alt="Men’s Casual Shoes"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Men’s Casual Shoes</p>
+            <p className="text-green-600 font-semibold">Min. 70% Off</p>
+          </div>
+
+          {/* Product 5 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/perfume.webp"
+              alt="perfume"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Men’s Casual Shoes</p>
+            <p className="text-green-600 font-semibold">Min. 70% Off</p>
+          </div>
+
+          {/* Product 6 */}
+          <div className=" p-3 rounded-md text-center">
+            <img
+              src="/food.jpeg"
+              alt="Skincare"
+              className="mx-auto h-40 object-contain"
+            />
+            <p className="mt-2 text-gray-700 font-medium">Peanut Butter</p>
+            <p className="text-green-600 font-semibold">Min. 70% Off</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full">
+        <div className="w-full">
+          <img
+            src="/banner5.webp"
+            alt="banner"
+            className="w-full h-auto object-cover rounded-md p-4"
+          />
         </div>
       </section>
 
@@ -479,12 +561,12 @@ const Home = () => {
 
       <section className="rounded-md bg-gray-100">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6 ">
-          <img className="w-[600px] h-[300px]" src="/img1.webp" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/img2.jpg" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img3.webp" alt="phone" />
-          <img className="w-[600px] h-[300px]" src="/img4.jpg" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img5.jpg" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img6.jpg" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/bedsheet.png" alt="tv" />
+          <img className="w-[600px] h-[300px]" src="/earbuds.webp" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/horlics.jpg" alt="phone" />
+          <img className="w-[600px] h-[300px]" src="/img7.webp" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/img8.webp" alt="shoes" />
+          <img className="w-[600px] h-[300px]" src="/img9.webp" alt="shoes" />
           {/* <img className="w-[500px] h-[400px]"
      src="/img1.webp" alt="tv" />
      <img className="w-[500px] h-[400px]"
