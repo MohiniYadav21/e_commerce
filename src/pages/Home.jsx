@@ -87,9 +87,9 @@ const Home = () => {
 
       <section className="bg-gray-100 ">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6">
-          <img className="w-[600px] h-[300px]" src="/bedsheet.png" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/earbuds.webp" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/horlics.jpg" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/bedsheet.png" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/earbuds.webp" alt="tv" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/horlics.jpg" alt="shoes" />
         </div>
       </section>
 
@@ -166,9 +166,9 @@ const Home = () => {
 
       <section className="bg-gray-100 ">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6">
-          <img className="w-[600px] h-[300px]" src="/img7.webp" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img8.webp" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/img9.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img7.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img8.webp" alt="tv" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img9.webp" alt="shoes" />
         </div>
       </section>
 
@@ -418,9 +418,9 @@ const Home = () => {
 
       <section className="bg-gray-100 ">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6">
-          <img className="w-[600px] h-[300px]" src="/img7.webp" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img8.webp" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/img9.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img7.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img8.webp" alt="tv" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img9.webp" alt="shoes" />
         </div>
       </section>
 
@@ -429,7 +429,7 @@ const Home = () => {
         <img
           src="/banner3.webp"
           alt="Fashion Banner"
-          className=" rounded-md object-cover w-full md:w-1/2 h-170"
+          className=" rounded-md object-cover w-full md:w-1/2 h-50 md:h-170"
         />
 
         <div className="bg-white rounded-xl p-4 md:p-6 w-full md:w-1/2 text-center md:text-left leading-relaxed space-y-3">
@@ -561,12 +561,12 @@ const Home = () => {
 
       <section className="rounded-md bg-gray-100">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 m-6 ">
-          <img className="w-[600px] h-[300px]" src="/bedsheet.png" alt="tv" />
-          <img className="w-[600px] h-[300px]" src="/earbuds.webp" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/horlics.jpg" alt="phone" />
-          <img className="w-[600px] h-[300px]" src="/img7.webp" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img8.webp" alt="shoes" />
-          <img className="w-[600px] h-[300px]" src="/img9.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/bedsheet.png" alt="tv" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/earbuds.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/horlics.jpg" alt="phone" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img7.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img8.webp" alt="shoes" />
+          <img className="w-full md:w-[600px] h-[150px] md:h-[300px]" src="/img9.webp" alt="shoes" />
           {/* <img className="w-[500px] h-[400px]"
      src="/img1.webp" alt="tv" />
      <img className="w-[500px] h-[400px]"

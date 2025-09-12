@@ -133,9 +133,9 @@ const HomeCategory = () => {
               <img
                 src={categoryImage}
                 alt={category.name}
-                className="w-10 md:w-20 h-10 md:h-20 rounded-md object-cover"
+                className="w-8 md:w-20 md:h-20 rounded-md object-cover"
               />
-              <h1 className="text-xs md:text-base capitalize text-center ">{category.name}</h1>
+              <h1 className="text-xs md:text-base capitalize text-center">{category.name}</h1>
             </div>
           </Link>
         );
