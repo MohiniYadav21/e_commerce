@@ -292,7 +292,7 @@ const Home = () => {
           {/* Product Card 1 */}
           <div className=" rounded-lg p-3 shadow hover:shadow-lg transition">
             <img
-              src="/style.png"
+              src="/shirtt.jpeg"
               alt="Shirt"
               className="w-full h-45 object-contain"
             />
@@ -348,7 +348,7 @@ const Home = () => {
           {/* Product Card 5 */}
           <div className=" rounded-lg p-3 shadow hover:shadow-lg transition">
             <img
-              src="toy.jpeg"
+              src="toyy.png"
               alt="Saree"
               className="w-full h-45 object-contain"
             />
