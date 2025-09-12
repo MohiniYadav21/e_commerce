@@ -114,7 +114,7 @@ const Home = () => {
               alt="Women's Saree"
               className="mx-auto h-40 object-contain"
             />
-            <p className="mt-2 text-gray-700 font-medium">Women’s Sarees</p>
+            <p className="mt-2 text-gray-700 font-medium">Women’s Skirts</p>
             <p className="text-green-600 font-semibold">Min. 50% Off</p>
           </div>
 
@@ -125,7 +125,7 @@ const Home = () => {
               alt="Laptop Bag"
               className="mx-auto h-40 object-contain"
             />
-            <p className="mt-2 text-gray-700 font-medium">Laptop Bags</p>
+            <p className="mt-2 text-gray-700 font-medium"> Bags</p>
             <p className="text-green-600 font-semibold">Min. 70% Off</p>
           </div>
 
@@ -147,7 +147,7 @@ const Home = () => {
               alt="perfume"
               className="mx-auto h-40 object-contain"
             />
-            <p className="mt-2 text-gray-700 font-medium">Men’s Casual Shoes</p>
+            <p className="mt-2 text-gray-700 font-medium">Perfume</p>
             <p className="text-green-600 font-semibold">Min. 70% Off</p>
           </div>
 
@@ -237,7 +237,7 @@ const Home = () => {
               alt="Laptop Bag"
               className="mx-auto h-40 object-contain"
             />
-            <p className="mt-2 text-gray-700 font-medium">Laptop Bags</p>
+            <p className="mt-2 text-gray-700 font-medium"> Bags</p>
             <p className="text-green-600 font-semibold">Min. 70% Off</p>
           </div>
 
@@ -259,7 +259,7 @@ const Home = () => {
               alt="perfume"
               className="mx-auto h-40 object-contain"
             />
-            <p className="mt-2 text-gray-700 font-medium">Men’s Casual Shoes</p>
+            <p className="mt-2 text-gray-700 font-medium">Perfume</p>
             <p className="text-green-600 font-semibold">Min. 70% Off</p>
           </div>
 
@@ -456,7 +456,7 @@ const Home = () => {
                 className="mx-auto h-50 object-contain"
               />
               <p className="mt-2 text-gray-700 font-medium">
-                Nothing Phone(3a)
+                Men's Tshirt
               </p>
               <p className="text-green-600 font-semibold">From ₹22,999*</p>
             </div>
@@ -468,7 +468,7 @@ const Home = () => {
                 alt="Laptop Bag"
                 className="mx-auto h-50 object-contain"
               />
-              <p className="mt-2 text-gray-700 font-medium">Google Pixel 9</p>
+              <p className="mt-2 text-gray-700 font-medium">Google Pixel Watch</p>
               <p className="text-green-600 font-semibold">From ₹22,999*</p>
             </div>
 
@@ -479,7 +479,7 @@ const Home = () => {
                 alt="Men’s Casual Shoes"
                 className="mx-auto h-50 object-contain"
               />
-              <p className="mt-2 text-gray-700 font-medium">vivo T4 Lite 5G</p>
+              <p className="mt-2 text-gray-700 font-medium">Saree</p>
               <p className="text-green-600 font-semibold">From ₹22,999*</p>
             </div>
           </div>
